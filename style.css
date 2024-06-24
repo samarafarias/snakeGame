@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Text:wght@100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Big shoulders', sans-serif;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: rgb(49, 58, 92);
+}
+
+.main{
+    width: 60vmin;
+    height: 70vmin;
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    justify-content: center;
+    background: rgb(42, 50, 78);
+    border-radius: 5px;
+    
+}
+
+.game{
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 1.2rem;
+    padding: 20px 27px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.board{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    background-color: rgb(72, 86, 136);
+    grid-template: repeat(30,1fr) / repeat(30,1fr);
+}
+
+.board .food{
+    background: rgb(247, 51, 51);
+}
+
+.board .head{
+    background: rgb(2, 185, 73);
+}
+
+
+.controls{
+    display: none;
+    justify-content: space-between;
+}
+
+.controls i{
+    padding: 25px 0;
+    text-align: center;
+    font-size: 1.3rem;
+    color: aliceblue;
+    width: calc(100%/4);
+    cursor: pointer;
+    border-right: 1px solid #171b26;
+}
+
+
+@media screen and (max-width : 800px){
+
+    .main{
+        width: 90vmin;
+        height: 115vmin;
+    }
+
+    .game{
+        font-size: 1rem;
+        padding: 15px 27px;
+    }
+
+    .controls{
+        display: flex;
+    }
+
+    .controls i {
+        padding: 15px 0;
+        font-size: 1rem;
+    }
+    
+}
+
+
